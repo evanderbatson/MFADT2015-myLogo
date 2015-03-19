@@ -4,9 +4,9 @@
 
 ```
 ○  ○  ○  ○  ○  ○  ○  ○  ○  ○
-○  ○  ○  ○  ○  ○  ○  ○  ○  ○		DESIGNING MULTIPLICITY
-○  ○  ○  ○  ○  ○  ○  ○  ○  ○        PARSONS MFA D+T 2015
-○  ○  ○  ○  ○  ○  ○  ○  ○  ○        THESIS SHOW
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○				DESIGNING MULTIPLICITY
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○        		PARSONS MFA D+T 2015
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○        		THESIS SHOW
 ○  ○  ○  ○  ○  ○  ○  ○  ○  ○
 ○  ○  ○  ○  ○  ○  ○  ○  ○  ○
 ○  ○  ○  ○  ○  ○  ○  ○  ○  ○
