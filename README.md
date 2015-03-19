@@ -1,18 +1,17 @@
-## MFADT2015-myLogo
-## Designing Multiplicity
+## MFADT2015-myLogo - Designing Multiplicity
 
-# Template for creating your own custom dynamic logo in P5 for the 2k15 Thesis Show exhibition website :D
+### Template for creating your own custom dynamic logo in P5 for the 2k15 Thesis Show exhibition website :D
 
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
-*--*--*--*--*--*--*--*--*--*
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
+○  ○  ○  ○  ○  ○  ○  ○  ○  ○
 
 The logo for the thesis show is a grid of 100 dots. Everyone in the show can submit their own custom specimen of the logo that will appear on their individual project page. There are thematic and visual guidelines for designing your logo in the brand bible that will be sent out by the design committee on the listserv. These logos can either be submitted as a static PNG file (boring), or drawn as a dynamic animated JS canvas object (awesome).
 
