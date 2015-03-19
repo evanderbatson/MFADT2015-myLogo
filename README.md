@@ -23,6 +23,7 @@ Finished? Submit your final .js file for approval to [batse087@newshcool.edu](ma
 
 #### TECHNICAL AND AESTHETIC GUIDELINES
 * Runs fast with low demand on cpu/memory
+* Loads instantaneously
 * Elegant, understated, and minimal
 * Works with the identity of the exhibition
 * Representitive of your practice or project
