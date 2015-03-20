@@ -6,9 +6,13 @@ function setup() {
   resizeCanvas();
   /*----------------------------------------*/
 
+  // Super low-res bouncing ball example.
+  // Since we're moving on a grid — instead of pixel by pixel —,
+  // we can make this frame rate really low.
   frameRate(10);
 }
 
+// The ball coordinates
 var i = 0;
 var j = 3;
 var iDirection = 2;
@@ -19,7 +23,7 @@ function draw() {
   
   i += iDirection;
   j += jDirection;
-  if(i >= 9 || i <= 0){
+  if(i > 9 || i <= 0){
     iDirection *= -1;
   }
   if(j >= 9 || j <= 0){
