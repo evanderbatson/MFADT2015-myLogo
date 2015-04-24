@@ -2,8 +2,8 @@ function setup() {
   /*------------------------------------------
   CANVAS SETUP: Please don't change
   ------------------------------------------*/
-  p5Canvas = createCanvas();
-  resizeCanvas();
+  p5Canvas = createCanvas(220, 220);
+  setDimensions();
   /*----------------------------------------*/
 }
 
