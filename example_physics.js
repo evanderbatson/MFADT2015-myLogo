@@ -65,11 +65,13 @@ function Circle(_x, _y){
   this.checkMouse = function(){
     if(dist(mouseX, mouseY, this.pos.x, this.pos.y) < diameter/2 && !this.isMoving){
       this.isMoving = true;
+      this.speed.x = mouseX - pmouseX;
     }
   }
 
   this.move = function(){
     if(this.isMoving){
+      
       // Add speed to location.
       this.pos.x = this.pos.x + this.speed.x;
       this.pos.y = this.pos.y + this.speed.y;
@@ -78,22 +80,21 @@ function Circle(_x, _y){
       this.speed.y = this.speed.y + gravity;
 
       //If square reaches the walls
-      if (this.pos.x < 0) {
-        this.pos.x = 0; 
-        //        this.speed.x[i] = - this.speed.x[i];        
+      if (this.pos.x < diameter/2 + 1) {
+        this.pos.x = diameter/2 + 1; 
         this.speed.x = this.speed.x * -0.8;
       }     
-      if (this.pos.x > width) {
-        this.pos.x = width; 
+      if (this.pos.x > width - diameter/2 - 1) {
+        this.pos.x = width - diameter/2 - 1; 
         //Dampening
         this.speed.x = this.speed.x * -0.8;
       }       
 
       // If square reaches the bottom
       // Reverse this.speed.y
-      if (this.pos.y > height - size/2) {
+      if (this.pos.y > height - diameter/2 - 1) {
         //Prevent the object from getting stuck outside the scene
-        this.pos.y = height - size/2;          
+        this.pos.y = height - diameter/2 - 1;          
         //        this.speed.y = -this.speed.y;  
         // Multiplying by -0.95 instead of -1 slows the square down each time it bounces (by decreasing this.speed.y).  
         // This is known as a "dampening" effect and is a more realistic simulation of the real world (without it, a ball would bounce forever).
@@ -105,7 +106,7 @@ function Circle(_x, _y){
         }
       }
     }
-  }  
+  }
 
   this.display = function(){
     noFill();
