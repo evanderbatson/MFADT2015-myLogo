@@ -59,10 +59,13 @@ function Circle(_x, _y){
   }
 
   this.checkMouse = function(){
-    if(dist(mouseX, mouseY, this.currPos.x, this.currPos.y) < diameter/2){
-      this.speed.x = constrain((mouseX - pmouseX), -5, 5);
-      this.speed.y = constrain((mouseY - pmouseY), -5, 5);
-    }    
+    if(0 < pmouseX && pmouseX < width &&
+       0 < pmouseY && pmouseY < height){
+      if(dist(mouseX, mouseY, this.currPos.x, this.currPos.y) < diameter/2){
+        this.speed.x = constrain((mouseX - pmouseX), -5, 5);
+        this.speed.y = constrain((mouseY - pmouseY), -5, 5);
+      }
+    }
   }
 
   this.move = function(){
