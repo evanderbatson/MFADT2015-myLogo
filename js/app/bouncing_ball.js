@@ -1,10 +1,7 @@
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
-  /*----------------------------------------*/
 
   // Super low-res bouncing ball example.
   // Since we're moving on a grid — instead of pixel by pixel —,
@@ -20,7 +17,7 @@ var jDirection = 1;
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   i += iDirection;
   j += jDirection;
   if(i > 9 || i <= 0){
@@ -47,6 +44,7 @@ function draw() {
       }
 
   		fill(color);
+      strokeWeight(0.3);
       stroke(0);
   		ellipse(x, y, diameter, diameter);
   	}

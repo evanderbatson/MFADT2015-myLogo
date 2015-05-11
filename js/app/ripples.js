@@ -1,10 +1,8 @@
 var allCircles = [];
 
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
 
@@ -19,7 +17,7 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   for(var i = 0; i < allCircles.length; i++){
     allCircles[i].checkMouse();
     allCircles[i].move();
@@ -67,7 +65,7 @@ function Circle(_x, _y, _diameter){
 
   this.display = function(){
     noFill();
-    
+    strokeWeight(0.3);
     stroke(0, this.alpha);
     ellipse(this.currPos.x, this.currPos.y, this.diameter, this.diameter);  
   }

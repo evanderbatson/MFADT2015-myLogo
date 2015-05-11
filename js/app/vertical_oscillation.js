@@ -1,8 +1,6 @@
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
   frameRate(30);  
@@ -10,7 +8,8 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
+  strokeWeight(0.3);
   //VERTICAL OSCILLATION
   for(var x = spacing/2; x < width; x += spacing){
     for(var y = spacing/2; y < height; y += spacing){

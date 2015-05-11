@@ -1,17 +1,16 @@
 var whichCircle = 0;
 
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
 }
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
+  strokeWeight(0.3);
   //SIZE OSCILLATION AND SINGLE BLACK CIRCLE (uses whichCircle declared out of scope)
   frameRate(30);
   var thisCircle = 0;

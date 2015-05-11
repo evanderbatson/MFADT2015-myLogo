@@ -1,16 +1,13 @@
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
-  /*----------------------------------------*/
   frameRate(1);  
 }
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   //10 PRINT
   for (var x = spacing/2; x < width; x += spacing) {
     for (var y = spacing/2; y < height; y += spacing) {

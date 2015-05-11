@@ -2,10 +2,8 @@ var allCircles = [];
 var gravity = 0.2;
 
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
 
@@ -20,7 +18,7 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   /*------------------------------------------
   This loop draws the basic grid.
   Feel free to add animations/interaction,
@@ -95,6 +93,7 @@ function Circle(_x, _y){
 
   this.display = function(){
     noFill();
+    strokeWeight(0.3);
     stroke(0);
     ellipse(this.pos.x, this.pos.y, diameter, diameter);    
   }

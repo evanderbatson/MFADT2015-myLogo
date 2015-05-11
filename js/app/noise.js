@@ -1,8 +1,6 @@
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
   frameRate(30);  
@@ -10,7 +8,7 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   //NOISE
   var xoff = 0.0;
   noiseDetail(4, 0.5);

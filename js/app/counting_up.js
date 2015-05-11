@@ -3,10 +3,8 @@ var whichColor = 0;
 var countingUp = true;
 
 function setup() {
-  /*------------------------------------------
-  CANVAS SETUP: Please don't change
-  ------------------------------------------*/
-  p5Canvas = createCanvas(220, 220);
+  p5Canvas = createCanvas(223, 223);
+  p5Canvas.parent('mainLogo');
   setDimensions();
   /*----------------------------------------*/
   frameRate(30);  
@@ -14,7 +12,7 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  translate(-3, 0);
   //COUNTING UP, uses thisCircle
   var thisCircle = 0;
   if (countingUp === true) {
@@ -41,6 +39,7 @@ function draw() {
         stroke(whichColor);
       } else {
         fill(255);
+        strokeWeight(0.3);
         stroke(255);
       }
       ellipse(x, y, newSize, newSize);
