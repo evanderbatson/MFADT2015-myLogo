@@ -94,31 +94,31 @@ switch (gridSelector) {
       }
     }
   break;
-  // case 1:
-  //   function draw() {
-  //     background(255);
+  case 1:
+    function draw() {
+      background(255);
       
-  //     for(var i = 0; i < allCircles.length; i++){
-  //       allCircles[i].display();
-  //     }
-  //   }
+      for(var i = 0; i < allCircles.length; i++){
+        allCircles[i].display();
+      }
+    }
 
-  //   function Circle(_x, _y, _diameter){
-  //     this.pos = {
-  //       x: _x,
-  //       y: _y    
-  //     }
-  //     this.diameter = _diameter;
+    function Circle(_x, _y, _diameter){
+      this.pos = {
+        x: _x,
+        y: _y    
+      }
+      this.diameter = _diameter;
 
 
-  //     this.display = function(){
-  //       this.diameter = map(dist(mouseX, mouseY, this.pos.x, this.pos.y),
-  //                           0, width/2,
-  //                           diameter, 2);
-  //       noFill();
-  //       stroke(0);
-  //       ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);    
-  //     }
-  //   }
-  // break;
+      this.display = function(){
+        this.diameter = map(dist(mouseX, mouseY, this.pos.x, this.pos.y),
+                            0, width/2,
+                            diameter, 2);
+        noFill();
+        stroke(0);
+        ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);    
+      }
+    }
+  break;
 }
