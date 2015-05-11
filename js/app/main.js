@@ -1,6 +1,6 @@
 function setup() {
-  p5Canvas = createCanvas(223,223);
-  p5Canvas.parent('mainLogo');
+  p5Canvas = createCanvas(220, 220);
+  setDimensions();
   frameRate(30);
 }
 
