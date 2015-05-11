@@ -61,8 +61,9 @@ function draw() {
   //   for(var y = spacing/2; y < height; y += spacing){
   //     yoff += 0.3;
   //     var c = noise(xoff, yoff, frameCount * 0.05)*255;
-  //     fill(c);
-  //     stroke(c);
+  //     var cMod = (c-125) * 1;
+  //     fill(c + cMod);
+  //     stroke(c + cMod);
   //     var s = (diameter/2) + noise(xoff, yoff, frameCount * 0.05) * 15;
   //     ellipse(x, y, s, s);
   //   }
